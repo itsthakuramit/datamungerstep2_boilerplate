@@ -167,7 +167,7 @@ The folders and files you see in this repositories, is how it is expected to be 
 
 1. Clone the base boilerplate in the folder **assignment-solution-step2** of your local machine
      
-    `git clone https://gitlab-cts.stackroute.in/database_engine/DataMungerStep2_Boilerplate.git assignment-solution-step2`
+    `git clone https://gitlab-cts.stackroute.in/stack_java_datamunging/DataMungerStep2_Boilerplate.git assignment-solution-step2`
 
 2. Navigate to assignment-solution-step2 folder
 
