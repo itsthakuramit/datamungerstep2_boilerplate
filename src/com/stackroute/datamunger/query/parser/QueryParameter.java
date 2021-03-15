@@ -9,36 +9,100 @@ import java.util.List;
  * */
 
 public class QueryParameter {
+	
+	private String fileName, baseQuery;
+	private List<String> orderByFields;
+	private List<String> groupByFields;
+	private List<String> fields;
+	private List<String> logicalOperators;
+	private List<AggregateFunction> aggregateFunctions;
+	private List<Restriction> restrictions;
+
+	
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
 
 	public String getFileName() {
-		return null;
+		return fileName;
+	}
+
+	
+	
+	
+	public void setBaseQuery(String baseQuery) {
+		this.baseQuery = baseQuery;
 	}
 
 	public String getBaseQuery() {
-		return null;
+		return baseQuery;
 	}
 
-	public List<Restriction> getRestrictions() {
-		return null;
-	}
 
-	public List<String> getLogicalOperators() {
-		return null;
+	
+	
+	public void setOrderByFields(List<String> orderByFields){
+		this.orderByFields=orderByFields;
 	}
-
-	public List<String> getFields() {
-		return null;
-	}
-
-	public List<AggregateFunction> getAggregateFunctions() {
-		return null;
-	}
-
-	public List<String> getGroupByFields() {
-		return null;
-	}
-
+	
 	public List<String> getOrderByFields() {
-		return null;
+		return orderByFields;
 	}
+
+	
+	
+	
+	public void setGroupByFields(List<String> groupByFields){
+		this.groupByFields=groupByFields;
+	}
+	
+	public List<String> getGroupByFields() {
+		return groupByFields;
+	}
+
+	
+	
+	
+	public void setFields(List<String> fields) {
+		this.fields=fields;
+	}
+	
+	public List<String> getFields() {
+		return fields;
+	}
+
+	
+	
+	public void setLogicalOperators(List<String> logicalOperators) {
+		this.logicalOperators=logicalOperators;
+	}
+	
+	public List<String> getLogicalOperators() {
+		return logicalOperators;
+	}
+
+	
+	
+	
+	
+	public void setAggregateFunction(List<AggregateFunction> aggregateFunctions) {
+		this.aggregateFunctions=aggregateFunctions;
+	}
+	
+	public List<AggregateFunction> getAggregateFunctions() {
+		return aggregateFunctions;
+	}
+	
+	
+	
+	
+	public void setRestrictions(List<Restriction> restrictions) {
+		this.restrictions=restrictions;
+	}
+	
+	public List<Restriction> getRestrictions() {
+		return restrictions;
+	}
+
 }
+
